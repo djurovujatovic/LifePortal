@@ -16,59 +16,6 @@ $(function () {
     $( ".sortable" ).disableSelection();
     //END TO-DO-LIST
 
-    //BEGIN AREA CHART SPLINE
-    var d6_1 = [["Jan", 67],["Feb", 91],["Mar", 36],["Apr", 150],["May", 28],["Jun", 123],["Jul", 38]];
-    var d6_2 = [["Jan", 59],["Feb", 49],["Mar", 45],["Apr", 94],["May", 76],["Jun", 22],["Jul", 31]];
-    var d6_3 = [["Jan", 79],["Feb", 29],["Mar", 15],["Apr", 64],["May", 86],["Jun", 22],["Jul", 45]];
-    $.plot("#area-chart-spline", [{
-        data: d6_1,
-        label: "Move",
-        color: "#ffce54"
-    },{
-        data: d6_2,
-        label: "Exercise",
-        color: "#01b6ad"
-    },{
-        data: d6_3,
-        label: "Stand",
-        color: "#e9662c"
-    }], {
-        series: {
-            lines: {
-                show: !1
-            },
-            splines: {
-                show: !0,
-                tension: .4,
-                lineWidth: 2,
-                fill: .8
-            },
-            points: {
-                show: !0,
-                radius: 4
-            }
-        },
-        grid: {
-            borderColor: "#fafafa",
-            borderWidth: 1,
-            hoverable: !0
-        },
-        tooltip: !0,
-        tooltipOpts: {
-            content: "%x : %y",
-            defaultTheme: true
-        },
-        xaxis: {
-            tickColor: "#fafafa",
-            mode: "categories"
-        },
-        yaxis: {
-            tickColor: "#fafafa"
-        },
-        shadowSize: 0
-    });
-    //END AREA CHART SPLINE
-
     //BEGIN CHAT FORM
     $('.chat-scroller').slimScroll({
         "width": '100%',
@@ -177,4 +124,3 @@ $(function () {
     //END COUNTER FOR SUMMARY BOX
 
 });
-

@@ -172,6 +172,13 @@ hr {
   height: 100%;
   background: #1E1E1E;
 }
+
+@media (min-width: 768px) {
+  #topbar .topbar-main #menu-toggle {
+    display: none;
+  }
+}
+
 #topbar .topbar-main #menu-toggle {
   float: left;
   padding: 15px 20px;
