@@ -18,10 +18,14 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 
-// set the home page route
+// set the login route
 app.get('/', function(req, res) {
-
     res.render('login');
+});
+
+// set the home page route
+app.get('/index', function(req, res) {
+    res.render('index');
 });
 
 app.get('/pokedex', function(req, res) {
